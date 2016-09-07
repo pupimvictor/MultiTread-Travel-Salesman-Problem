@@ -1,0 +1,12 @@
+Sequencial:
+gcc sequencial.c -o sequencial -std=gnu99 -lm
+./sequencial
+
+Threads:
+gcc thread.c -o thread -std=gnu99 -lm -lpthread
+./thread
+
+MPI+Threads:
+mpicc mpiThread.c -o mpiThread -std=gnu99 -lm
+mpirun -np 4 mpiThread
+
